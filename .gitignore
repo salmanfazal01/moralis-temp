@@ -25,12 +25,17 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
-.env*.local
+# environment variables
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+.firebaserc
+
+.package-lock
+/test-results/
+/playwright-report/
+/playwright/.cache/

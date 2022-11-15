@@ -14,7 +14,8 @@ const Register = () => {
   const { status, address, isConnected } = useAccount();
 
   const handleRegister = async () => {
-    const _found = await getUserWithEmail(`${address}@makerdao.academy`);
+    console.log(123);
+    const _found = await getUserWithEmail(`${address}@academy.makerdao.network`);
 
     if (!_found) {
       const res = await handleWalletRegister(address);
